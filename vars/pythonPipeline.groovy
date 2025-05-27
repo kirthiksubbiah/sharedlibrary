@@ -7,6 +7,11 @@ def call() {
                     sh 'python3 main.py'
                 }
             }
+            stage('success'){
+                steps{
+                    echo 'success'
+                }
+            }
         }
     }
 }
